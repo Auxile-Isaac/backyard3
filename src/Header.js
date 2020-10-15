@@ -5,13 +5,14 @@ const style1 = {
     height: "100px",
     width: "50%",
     position: "absolute",
-    background: "#C4A166",
+    background: "#2D2D2D",
     zIndex: 3,
     listStyle: "none",
     marginTop: "215px",
     display: "flex",  
     flexDirection: "column",
-    borderBottomRightRadius: "8px",  
+    borderBottomRightRadius: "8px", 
+    marginLeft: "50%" 
 }
 
 const List = ({ style }) => {
@@ -77,7 +78,7 @@ function Header() {
                             listStyle: "none",
                             paddingRight: "10px",
                             marginRight: "100px",
-                            color: "white"
+                            // color: "white"
                         }}
                     />
                 )}
