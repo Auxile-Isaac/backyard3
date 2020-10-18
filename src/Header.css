@@ -1,6 +1,6 @@
 .header{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #2D2D2D;
     height: 100px;
@@ -11,6 +11,21 @@
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 100px;
+}
+
+.header__buttons{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.header__cart{
+    display: flex;
+}
+
+.header__cart > p{
+    color: #C4A166;
 }
 
 .header__dropdown{
@@ -27,15 +42,23 @@
 }
 
 .header__list{
-    text-align: left;
     border: none;
     background-color: inherit;
     margin-top: 5px;
+    margin-left: 100px;
     color: #C4A166;
 }
 
-@media(max-width: 768px){
+@media(max-width: 990px){
     .header__logo{
         margin-left: 20px;
+    }
+
+    .header__buttons{
+        margin-right: 30px;
+    }
+
+    .header__list{
+        margin-left: 50px;
     }
 }

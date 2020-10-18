@@ -1,0 +1,18 @@
+.pizza{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.pizza__mediaCard{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media(max-width: 990px){
+    .pizza{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .pizza__mediaCard{
+        grid-template-columns: auto auto;
+    }
+}

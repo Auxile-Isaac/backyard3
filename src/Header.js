@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const style1 = {
     height: "100px",
@@ -8,7 +9,7 @@ const style1 = {
     background: "#2D2D2D",
     zIndex: 3,
     listStyle: "none",
-    marginTop: "215px",
+    marginTop: "140px",
     display: "flex",  
     flexDirection: "column",
     borderBottomRightRadius: "8px", 
@@ -23,6 +24,7 @@ const List = ({ style }) => {
             <button className="header__list">Our Menu</button>
             <button className="header__list">Contact Us</button>
             <button className="header__list">Sign Up</button>
+            <button className="header__list"><ShoppingCartIcon/></button>
         </ul >
     );
 };
@@ -57,7 +59,7 @@ const MobileList = () => {
 function Header() {
 
     const [isMobile, setIsMobile] = useState(
-        window.matchMedia("(max-width:768px)").matches
+        window.matchMedia("(max-width:990px)").matches
     );
 
     useEffect(() => {
