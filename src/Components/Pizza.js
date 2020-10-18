@@ -12,7 +12,9 @@ function Pizza() {
         {Data.map( post => {
           return(
             <MediaCard
+            id={post.id}
             key={post.id}
+            category={post.category}
             title={post.title}
             ImgUrl={post.Url}
             Ingredients= {post.Ingredients}

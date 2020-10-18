@@ -1,0 +1,40 @@
+.cartProduct{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.cartProduct__info{
+    display: flex;
+    border-top: 1px solid #2D2D2D
+}
+
+.cartProduct__category{
+    margin-right: 20px;
+}
+
+.cartProduct__title{
+    margin-right: 60px;
+}
+
+.cartProduct__price{
+    margin-right: 100px;
+}
+
+@media(max-width: 990px){
+    .cartProduct{
+        margin-left: 10px;
+        margin-right: 10px;  
+    }
+    .cartProduct__category{
+        margin-right: 10px;
+    }
+    
+    .cartProduct__title{
+        margin-right: 30px;
+    }
+    
+    .cartProduct__price{
+        margin-right: 30px;
+    }
+}

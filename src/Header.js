@@ -24,7 +24,7 @@ const List = ({ style }) => {
             <button className="header__list">Our Menu</button>
             <button className="header__list">Contact Us</button>
             <button className="header__list">Sign Up</button>
-            <button className="header__list"><ShoppingCartIcon/></button>
+            {/* <button className="header__list"><ShoppingCartIcon/></button> */}
         </ul >
     );
 };

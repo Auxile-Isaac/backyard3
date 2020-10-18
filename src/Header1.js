@@ -1,25 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
+import {useStateValue} from "./StateProvider";
 
 function Header1() {
+  const [{ basket }] = useStateValue();
 
-  const [cartCount, setCartCount] = useState(0)
-  
-  const headerStyle ={
+  const headerStyle = {
     color: "inherit",
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  };
+
+  console.log(basket);
 
   return (
     <div className="header">
       <Link style={headerStyle} to="/">
-      <img
-        className="header__logo"
-        src={require("./images/logo.png")}
-        alt="Backyard logo"
-      />
+        <img
+          className="header__logo"
+          src={require("./images/logo.png")}
+          alt="Backyard logo"
+        />
       </Link>
       <div className="header__buttons">
         <Link style={headerStyle} to="/login">
@@ -30,7 +32,7 @@ function Header1() {
             <button className="header__list">
               <ShoppingCartIcon />
             </button>
-            <p>0</p>
+            <p>{basket?.length}</p>
           </div>
         </Link>
       </div>

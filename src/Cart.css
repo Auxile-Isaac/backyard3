@@ -1,0 +1,9 @@
+.cart{
+    text-align: center; 
+    background-color: #F8F9FA; 
+}
+
+.cart__header{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}

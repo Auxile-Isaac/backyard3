@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import {useStateValue} from "../StateProvider";
 
 const useStyles = makeStyles({
   root: {
@@ -20,8 +21,24 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({title, Ingredients, ImgUrl, Price}) {
+export default function MediaCard({title, Ingredients, ImgUrl, Price, id, category}) {
   const classes = useStyles();
+
+  const [{ basket }, dispatch] = useStateValue();
+
+  const addToBasket = () =>{
+    // add item to basket
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        category: category,
+        ImgUrl: ImgUrl,
+        title: title, 
+        Price: Price
+      }
+    })
+  };
 
   return (
     <Card className={classes.root}>
@@ -40,7 +57,7 @@ export default function MediaCard({title, Ingredients, ImgUrl, Price}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={addToBasket}>
          <AddShoppingCartIcon/> Add to Cart 
         </Button>
       </CardActions>

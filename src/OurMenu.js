@@ -2,11 +2,12 @@ import { Button } from '@material-ui/core'
 import React, { useState } from 'react';
 import Pizza from './Components/Pizza';
 import Burger from './Components/Burger';
-import Chickens from './Components/Chicken'
+import Chickens from './Components/Chicken';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import './OurMenu.css';
 
 const initialMenu = () => {
-    return <h1>all menu</h1>
+    return <h3>choose a category  <ArrowUpwardIcon/></h3>
 }
 
 function OurMenu() {
