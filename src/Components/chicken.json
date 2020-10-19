@@ -1,0 +1,44 @@
+[
+ {   "category" : "chicken",
+        "id": 300001,
+        "title" : "nuggets meal",
+        "Url" : "https://www.thesouthafrican.com/wp-content/uploads/2020/04/b25c2198-kfc-1200x858.jpeg",
+        "Ingredients" : "6 nuggetts, French fries & a soft drink",
+        "price" : 8000
+    },
+     {   "category" : "chicken",
+        "id": 300002,
+        "title" : "strips meal",
+        "Url" : "https://www.thesouthafrican.com/wp-content/uploads/2020/04/b25c2198-kfc-1200x858.jpeg",
+        "Ingredients" : "6 strips, French fries & a soft drink",
+        "price" : 8000
+    },
+     {   "category" : "chicken",
+        "id": 300003,
+        "title" : "twisted wings meal",
+        "Url" : "https://www.thesouthafrican.com/wp-content/uploads/2020/04/b25c2198-kfc-1200x858.jpeg",
+        "Ingredients" : "5 twisted wings, French fries & a soft drink",
+        "price" : 8000
+    },
+      {   "category" : "chicken",
+        "id": 300004,
+        "title" : "spicy wings meal",
+        "Url" : "https://www.thesouthafrican.com/wp-content/uploads/2020/04/b25c2198-kfc-1200x858.jpeg",
+        "Ingredients" : "5 spicy wings, French fries & a soft drink",
+        "price" : 8000
+    },
+      {   "category" : "chicken",
+        "id": 300005,
+        "title" : "BBQ wings meal",
+        "Url" : "https://www.thesouthafrican.com/wp-content/uploads/2020/04/b25c2198-kfc-1200x858.jpeg",
+        "Ingredients" : "5 BBQ wings, French fries & a soft drink",
+        "price" : 8000
+    },
+      {   "category" : "chicken",
+        "id": 300006,
+        "title" : "grill wings meal",
+        "Url" : "https://www.thesouthafrican.com/wp-content/uploads/2020/04/b25c2198-kfc-1200x858.jpeg",
+        "Ingredients" : "6 grill wings, French fries & a soft drink",
+        "price" : 8000
+    }
+]

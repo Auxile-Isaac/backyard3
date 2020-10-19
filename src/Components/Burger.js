@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pizza.css";
+import Data from "./burger.json";
 import MediaCard from "./MediaCard";
 
 function Burger() {
@@ -8,70 +9,19 @@ function Burger() {
       <h1>Burgers</h1>
       <p>A tasty burger is what you deserve</p>
       <div className="pizza__mediaCard">
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-      </div>
-      <div className="pizza__mediaCard">
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
-
-        <MediaCard
-          title="Chicken Burger"
-          ImgUrl={require("../images/burger.jpeg")}
-          Ingredients=" 2 plum tomatoes, thinly sliced
-                 1 small ball mozzarella cheese, cut into pieces                 
-                 3 basil leaves, torn into pieces"
-        />
+      {Data.map( post => {
+          return(
+            <MediaCard
+            id={post.id}
+            key={post.id}
+            category={post.category}
+            title={post.title}
+            ImgUrl={post.Url}
+            Ingredients= {post.Ingredients}
+            Price = {post.price}
+          />
+          )
+        })}
       </div>
     </div>    
   );

@@ -1,0 +1,72 @@
+[
+    {   "category" : "Burgers",
+        "id": 200001,
+        "title" : "Beef Burger",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "beef patty, onions, tomatoes, pickles, lettuce, ketchup, mayo, mustard",
+        "price" : 4000
+    },
+    {   "category" : "Burgers",
+        "id": 200002,
+        "title" : "cheese Burger",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "beef patty, cheeder cheese, grilled onions & tomatoes, pickles, lettuce, ketchup, mayo, mustard",
+        "price" : 4000
+    },
+     {   "category" : "Burgers",
+        "id": 200003,
+        "title" : " Beef Bacon",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "beef patty, chedder cheese, beef Bacon, grilled onions & tomatoes, pickles, lettuce, katchup, mayo, mustard",
+        "price" : 4000
+    },
+  {   "category" : "Burgers",
+        "id": 200004,
+        "title" : " creamy mushroom",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "beef patty, cream of mushroom, mozza cheese, grilled onions, mayo",
+        "price" : 4000
+    },
+    {   "category" : "Burgers",
+        "id": 200005,
+        "title" : " hawaiian Burger",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "beef patty, grilled pineapple mozza, cheese, onions, tomatoes, lettuce, mayo, BBQ sauce",
+        "price" : 4000
+    },
+        {   "category" : "Burgers",
+        "id": 200006,
+        "title" : " Spicy tandoori",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "tandoori Chicken, chedder, cheese, grilled onions&tomatoes, lettuce, pickles, garlic Sauce, mayo",
+        "price" : 4000
+    },
+       {   "category" : "Burgers",
+        "id": 200007,
+        "title" : " Spicy buffalo",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "crispy chicken, mozza cheese, grilled onions & tomatoes, lettuce, garlic sauce, buffalo sauce",
+        "price" : 4000
+    },
+      {   "category" : "Burgers",
+        "id": 200008,
+        "title" : " BBQ Chicken",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "grilled chicken, mozza cheese, grilled onions, lettuce, mayo, BBQ sauce",
+        "price" : 4000
+    },
+     {   "category" : "Burgers",
+        "id": 200009,
+        "title" : " crispy Chicken",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "crispy chicken, chedder cheese, grilled onions&tomatoes, lettuce, pickles, garlic sauce, mayo, chipotle sauce",
+        "price" : 4000
+    },
+      {   "category" : "Burgers",
+        "id": 2000010,
+        "title" : " chicken paradise",
+        "Url" : "https://media-cdn.tripadvisor.com/media/photo-s/17/ba/a6/25/burger.jpg",
+        "Ingredients" : "grilled chicken, mozza cheese, grilled pineapple, lettuce, onions, jalapenos, mayo, garlic sauce",
+        "price" : 4000
+    }
+]

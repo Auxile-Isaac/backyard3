@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import "./Pizza.css";
-import Data from "./chicken.json";
+import Data from "./Sandwiches.json";
 import MediaCard from "./MediaCard";
 
-function Chickens() {
-    return (
-        <div className="pizza">
-      <h1>Chicken</h1>
-      <p>If you don’t lick your fingers, enjoy only half</p>
+function Sandwiches() {
+  return (
+    <div className="pizza">
+      <h1>Sandwiches</h1>
+      <p>After a good Sandwich one can forgive anybody, even one's own relations.</p>
       <div className="pizza__mediaCard">
       {Data.map( post => {
           return(
@@ -23,8 +23,8 @@ function Chickens() {
           )
         })}
       </div>
-    </div> 
-    )
+    </div>    
+  );
 }
 
-export default Chickens
+export default Sandwiches;

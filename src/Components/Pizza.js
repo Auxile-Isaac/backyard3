@@ -21,9 +21,7 @@ function Pizza() {
             Price = {post.price}
           />
           )
-        })}
-
-        
+        })}        
       </div>
     </div>
   );
