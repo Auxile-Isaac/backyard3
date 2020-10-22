@@ -29,8 +29,8 @@ export default function MediaCard({title, Ingredients, ImgUrl, Price, id, catego
   const addToBasket = () =>{
     // add item to basket
     dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
+        type: "ADD_TO_BASKET",
+        item: {
         id: id,
         category: category,
         ImgUrl: ImgUrl,
@@ -38,6 +38,7 @@ export default function MediaCard({title, Ingredients, ImgUrl, Price, id, catego
         Price: Price
       }
     })
+    alert("Product added to cart successfully !")
   };
 
   return (

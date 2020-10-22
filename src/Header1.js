@@ -2,18 +2,22 @@ import React from "react";
 import "./Header.css";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
-import {useStateValue} from "./StateProvider";
+import { useStateValue } from "./StateProvider";
+import { auth } from "./Firebase";
 
 function Header1() {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
 
   const headerStyle = {
     color: "inherit",
     textDecoration: "none",
   };
 
-  console.log(basket);
-
+  const login = () =>{
+    if (user){
+      auth.signOut();
+    }
+  }
   return (
     <div className="header">
       <Link style={headerStyle} to="/">
@@ -24,8 +28,12 @@ function Header1() {
         />
       </Link>
       <div className="header__buttons">
-        <Link style={headerStyle} to="/login">
-          <button className="header__list">Sign Up</button>
+        <Link style={headerStyle} to="/">
+          <h4 className="header__list">Home</h4>
+        </Link>
+        <Link style={headerStyle} to={!user && "/login"}>
+          {/* <h5>hello</h5> */}
+          <button onClick={login} className="header__list">{user ? "Sign out" : "Sign In"}</button>
         </Link>
         <Link style={headerStyle} to="/cart">
           <div className="header__cart">

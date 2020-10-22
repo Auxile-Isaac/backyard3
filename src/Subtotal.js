@@ -4,7 +4,7 @@ import "./Subtotal.css";
 import PaymentIcon from "@material-ui/icons/Payment";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
-import {getBasketTotal} from "./reducer"
+import {getBasketTotal} from "./reducer";
 
 function Subtotal() {
 

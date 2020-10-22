@@ -20,9 +20,9 @@ function Cart() {
             Where there is good food, there is happiness! Add something to your
             cart and let us bring happinnes to you.
           </p>
-          <h4>
-            <Link to="/">Back Home</Link>
-          </h4>
+          <Link to="/">
+            <h4>Back Home</h4>
+          </Link>
         </div>
       ) : (
         <di>
@@ -40,7 +40,7 @@ function Cart() {
       )}
       {basket?.length > 0 && (
         <div className="cart__subtotal">
-          <Subtotal/>
+          <Subtotal />
         </div>
       )}
     </div>
